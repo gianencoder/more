@@ -24,8 +24,8 @@ export default function Page() {
   return (
     <ImageBackground style={{ height: '100%', width: '100%', justifyContent: 'center', alignItems: 'center' }}
       source={require('../img/m.png')}
-      resizeMode='repeat'
-      resizeMethod='auto'
+      resizeMode='cover'
+
     >
       <View style={{
         height: '80%', width: '70%', backgroundColor: 'pink', borderRadius: 25,
@@ -52,7 +52,7 @@ export default function Page() {
             onChangeText={setText}
             maxLength={750}
             placeholder='Tu mensaje aquí...'
-            placeholderTextColor={'pink'}
+            placeholderTextColor={'38434D'}
 
           />
 
@@ -62,7 +62,7 @@ export default function Page() {
               style={{
                 height: 30, width: 120, backgroundColor: 'white',
                 borderRadius: 10, justifyContent: 'center', alignItems: 'center',
-                shadowColor: "#000",
+                shadowColor: "#38434D",
                 shadowOffset: {
                   width: 0,
                   height: 5,
@@ -71,7 +71,7 @@ export default function Page() {
                 shadowRadius: 6.68,
                 elevation: 11,
               }}>
-              <Text style={{ color: 'pink', fontSize: 15, fontWeight: 'bold' }}>Hablar</Text>
+              <Text style={{ color: '38434D', fontSize: 15, fontWeight: 'bold' }}>Hablar</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
@@ -79,7 +79,7 @@ export default function Page() {
               style={{
                 height: 30, width: 120, backgroundColor: 'white',
                 borderRadius: 10, justifyContent: 'center', alignItems: 'center',
-                shadowColor: "#000",
+                shadowColor: "#38434D",
                 shadowOffset: {
                   width: 0,
                   height: 5,
@@ -89,7 +89,7 @@ export default function Page() {
 
                 elevation: 11,
               }}>
-              <Text style={{ color: 'pink', fontSize: 15, fontWeight: 'bold' }}>Pausar</Text>
+              <Text style={{ color: '38434D', fontSize: 15, fontWeight: 'bold' }}>Pausar</Text>
             </TouchableOpacity>
           </View>
 
@@ -98,7 +98,7 @@ export default function Page() {
             style={{
               height: 30, width: 180, backgroundColor: 'white',
               borderRadius: 10, justifyContent: 'center', alignItems: 'center',
-              shadowColor: "#000",
+              shadowColor: "#38434D",
               shadowOffset: {
                 width: 0,
                 height: 5,
@@ -108,11 +108,12 @@ export default function Page() {
 
               elevation: 11,
             }}>
-            <Text style={{ color: 'pink', fontSize: 15, fontWeight: 'bold' }}>Borrar todo el texto</Text>
+            <Text style={{ color: '38434D', fontSize: 15, fontWeight: 'bold' }}>Borrar todo el texto</Text>
           </TouchableOpacity>
 
         </View>
       </View>
+      <Text style={{ top: '8%', fontWeight: '600', color: '#38434D' }}>by gianmendoza</Text>
     </ImageBackground >
   )
 }
@@ -132,7 +133,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 25,
-    fontWeight: "bold",
     borderRadius: 10,
     right: '15%',
     color: "#38434D",
